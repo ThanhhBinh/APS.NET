@@ -48,13 +48,10 @@
                             <h6>MY MARKETS</h6>
                             <nav class="nav-home-aside">
                                 <ul class="menu-category">
-                                    <li><a href="#">Fashion and clothes</a></li>
-                                    <li><a href="#">Automobile and motors</a></li>
-                                    <li><a href="#">Gardening and agriculture</a></li>
-                                    <li><a href="#">Electronics and tech</a></li>
-                                    <li><a href="#">Packaginf and printing</a></li>
-                                    <li><a href="#">Home and kitchen</a></li>
-                                    <li><a href="#">Digital goods</a></li>
+                                    @foreach (var category in categories.Take(8))
+                                    {
+                                        <li><a href="@Url.Action("ProductByCategory", "Category", new { id = category.id })">@category.name</a></li>
+                                    }
                                     <li class="has-submenu">
                                         <a href="#">More items</a>
                                         <ul class="submenu">
