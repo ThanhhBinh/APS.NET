@@ -1,4 +1,12 @@
-﻿<!DOCTYPE HTML>
+﻿
+@model WebASP.Models.HomeModel
+
+@{ 
+    var poducts = Model.ListProduct;
+    var categories = Model.ListCategory;
+}
+
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -25,7 +33,7 @@
 
     <!-- custom javascript -->
     <script src="~/Scripts/js/script.js" type="text/javascript"></script>
-    
+
 </head>
 <body>
 

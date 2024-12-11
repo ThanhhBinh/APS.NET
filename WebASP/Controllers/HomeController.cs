@@ -3,14 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebASP.Context;
+using WebASP.Models;
 
 namespace WebASP.Controllers
 {
     public class HomeController : Controller
     {
+        WebAPSEntities objASPNETEntities = new WebAPSEntities();
+
         public ActionResult Index()
         {
-            return View();
+            HomeModel objHomeModel = new HomeModel();
+
+            objHomeModel.ListProduct = objASPNETEntities.Products.ToList();
+            objHomeModel.ListCategory = objASPNETEntities.Categories.ToList();
+
+            return View(objHomeModel);
         }
 
         public ActionResult About()
