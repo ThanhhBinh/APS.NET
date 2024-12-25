@@ -10,7 +10,7 @@ namespace WebASP.Controllers
 {
     public class HomeController : Controller
     {
-        WebAPSEntities objASPNETEntities = new WebAPSEntities();
+        WebAPSEntities4 objASPNETEntities = new WebAPSEntities4();
 
         public ActionResult Index()
         {

@@ -154,6 +154,9 @@
     <Compile Include="Context\Order.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Context\OrderDetail.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Context\Product.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -161,6 +164,8 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\CartController.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
+    <Compile Include="Models\CartModel.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -2123,6 +2128,15 @@
     <Content Include="Content\images\items\7.jpg" />
     <Content Include="Content\images\items\8.jpg" />
     <Content Include="Content\images\items\9.jpg" />
+    <Content Include="Content\images\items\beauty.jpg" />
+    <Content Include="Content\images\items\books.jpeg" />
+    <Content Include="Content\images\items\electronics.jpeg" />
+    <Content Include="Content\images\items\fashion.jpeg" />
+    <Content Include="Content\images\items\home.jpeg" />
+    <Content Include="Content\images\items\mobile.jpeg" />
+    <Content Include="Content\images\items\sports.jpeg" />
+    <Content Include="Content\images\items\toys.jpeg" />
+    <Content Include="Content\images\items\vehicles.jpeg" />
     <Content Include="Content\images\logo-white.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\logo.svg" />
@@ -2135,8 +2149,8 @@
     <Content Include="Content\images\posts\4.jpg" />
     <Content Include="Context\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Context\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -2318,10 +2332,12 @@
     <Content Include="Views\Category\AllCategory.cshtml" />
     <Content Include="Views\Cart\Cart.cshtml" />
     <Content Include="Views\Product\AllProduct.cshtml" />
+    <Content Include="Views\Payment\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Content\images\category\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

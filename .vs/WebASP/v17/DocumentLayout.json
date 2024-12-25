@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\School\\ASP\\APS.NET\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|d:\\school\\asp\\aps.net\\webasp\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|solutionrelative:webasp\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|d:\\school\\asp\\aps.net\\webasp\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|solutionrelative:webasp\\views\\cart\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|d:\\school\\asp\\aps.net\\webasp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|solutionrelative:webasp\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|d:\\school\\asp\\aps.net\\webasp\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|solutionrelative:webasp\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|d:\\school\\asp\\aps.net\\webasp\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|solutionrelative:webasp\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|d:\\school\\asp\\aps.net\\webasp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ACC647AB-D1FD-461C-9650-217FD2822B04}|WebASP\\WebASP.csproj|solutionrelative:webasp\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\School\\ASP\\APS.NET\\WebASP\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebASP\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\School\\ASP\\APS.NET\\WebASP\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "WebASP\\Views\\User\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T08:42:46.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\School\\ASP\\APS.NET\\WebASP\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebASP\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\School\\ASP\\APS.NET\\WebASP\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebASP\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAuwF4AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T08:40:28.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\School\\ASP\\APS.NET\\WebASP\\Views\\Product\\Detail.cshtml",
+              "RelativeDocumentMoniker": "WebASP\\Views\\Product\\Detail.cshtml",
+              "ToolTip": "D:\\School\\ASP\\APS.NET\\WebASP\\Views\\Product\\Detail.cshtml",
+              "RelativeToolTip": "WebASP\\Views\\Product\\Detail.cshtml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T08:32:13.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "D:\\School\\ASP\\APS.NET\\WebASP\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "WebASP\\Controllers\\PaymentController.cs",
+              "ToolTip": "D:\\School\\ASP\\APS.NET\\WebASP\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "WebASP\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAgwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T08:32:03.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\School\\ASP\\APS.NET\\WebASP\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "WebASP\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\School\\ASP\\APS.NET\\WebASP\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "WebASP\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T08:30:58.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cart.cshtml",
+              "DocumentMoniker": "D:\\School\\ASP\\APS.NET\\WebASP\\Views\\Cart\\Cart.cshtml",
+              "RelativeDocumentMoniker": "WebASP\\Views\\Cart\\Cart.cshtml",
+              "ToolTip": "D:\\School\\ASP\\APS.NET\\WebASP\\Views\\Cart\\Cart.cshtml",
+              "RelativeToolTip": "WebASP\\Views\\Cart\\Cart.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFgAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-25T08:30:34.32Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

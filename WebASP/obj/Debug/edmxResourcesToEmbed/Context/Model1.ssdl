@@ -27,14 +27,22 @@
     <Property Name="created_at" Type="datetime" />
     <Property Name="updated_at" Type="datetime" />
   </EntityType>
+  <EntityType Name="OrderDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="order_id" Type="int" Nullable="false" />
+    <Property Name="product_id" Type="int" Nullable="false" />
+    <Property Name="quantity" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="Orders">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="50" />
-    <Property Name="product_id" Type="int" />
-    <Property Name="price" Type="float" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="user_id" Type="int" />
     <Property Name="status" Type="int" />
     <Property Name="created_at" Type="datetime" />
   </EntityType>
@@ -47,7 +55,7 @@
     <Property Name="brand_id" Type="int" />
     <Property Name="name" Type="nvarchar" MaxLength="50" />
     <Property Name="short_decription" Type="nvarchar" MaxLength="50" />
-    <Property Name="full_description" Type="nvarchar" MaxLength="50" />
+    <Property Name="full_description" Type="nvarchar" MaxLength="500" />
     <Property Name="price" Type="float" />
     <Property Name="price_discount" Type="float" />
     <Property Name="type_id" Type="int" />
@@ -56,7 +64,8 @@
     <Property Name="show_on_homePage" Type="bit" />
     <Property Name="display_order" Type="int" />
     <Property Name="created_at" Type="datetime" />
-    <Property Name="updated_by" Type="datetime" />
+    <Property Name="updated_by" Type="nchar" MaxLength="10" />
+    <Property Name="image" Type="nvarchar" MaxLength="1000" />
   </EntityType>
   <EntityType Name="Users">
     <Key>
@@ -69,15 +78,39 @@
     <Property Name="password" Type="nvarchar" MaxLength="50" />
     <Property Name="is_admin" Type="bit" />
   </EntityType>
-  <Association Name="FK_Orders_Products">
-    <End Role="Products" Type="Self.Products" Multiplicity="0..1" />
-    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+  <Association Name="FK_OrderDetail_Orders">
+    <End Role="Orders" Type="Self.Orders" Multiplicity="1" />
+    <End Role="OrderDetail" Type="Self.OrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="OrderDetail">
+        <PropertyRef Name="order_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderDetail_Products">
+    <End Role="Products" Type="Self.Products" Multiplicity="1" />
+    <End Role="OrderDetail" Type="Self.OrderDetail" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Products">
         <PropertyRef Name="id" />
       </Principal>
-      <Dependent Role="Orders">
+      <Dependent Role="OrderDetail">
         <PropertyRef Name="product_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Orders_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="Orders" Type="Self.Orders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="user_id" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -108,11 +141,20 @@
   <EntityContainer Name="WebAPSModelStoreContainer">
     <EntitySet Name="Brands" EntityType="Self.Brands" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Categories" EntityType="Self.Categories" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderDetail" EntityType="Self.OrderDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Orders" EntityType="Self.Orders" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Products" EntityType="Self.Products" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
-    <AssociationSet Name="FK_Orders_Products" Association="Self.FK_Orders_Products">
+    <AssociationSet Name="FK_OrderDetail_Orders" Association="Self.FK_OrderDetail_Orders">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderDetail_Products" Association="Self.FK_OrderDetail_Products">
       <End Role="Products" EntitySet="Products" />
+      <End Role="OrderDetail" EntitySet="OrderDetail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Orders_Users" Association="Self.FK_Orders_Users">
+      <End Role="Users" EntitySet="Users" />
       <End Role="Orders" EntitySet="Orders" />
     </AssociationSet>
     <AssociationSet Name="FK_Products_Brands" Association="Self.FK_Products_Brands">

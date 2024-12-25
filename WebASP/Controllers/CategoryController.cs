@@ -10,7 +10,7 @@ namespace WebASP.Controllers
     public class CategoryController : Controller
     {
         // GET: Category
-        WebAPSEntities objASPNETEntities = new WebAPSEntities();
+        WebAPSEntities4 objASPNETEntities = new WebAPSEntities4();
 
         public ActionResult AllCategory()
         {
@@ -18,9 +18,10 @@ namespace WebASP.Controllers
             return View(lstAllCategory);
         }
 
-        public ActionResult ProductByCategory()
+        public ActionResult ProductByCategory(int id)
         {
-            return View();
+            var listProduct = objASPNETEntities.Products.Where(n => n.category_id == id).ToList();
+            return View(listProduct);
         }
     }
 }

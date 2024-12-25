@@ -14,13 +14,20 @@ namespace WebASP.Context
     
     public partial class Order
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Order()
+        {
+            this.OrderDetails = new HashSet<OrderDetail>();
+        }
+    
         public int id { get; set; }
-        public string Name { get; set; }
-        public Nullable<int> product_id { get; set; }
-        public Nullable<double> price { get; set; }
+        public string name { get; set; }
+        public Nullable<int> user_id { get; set; }
         public Nullable<int> status { get; set; }
         public Nullable<System.DateTime> created_at { get; set; }
     
-        public virtual Product Product { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrderDetail> OrderDetails { get; set; }
+        public virtual User User { get; set; }
     }
 }
